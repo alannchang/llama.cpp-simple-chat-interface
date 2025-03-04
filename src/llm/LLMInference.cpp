@@ -14,7 +14,7 @@ LLMInference::loadModel(const std::string& model_path, float min_p, float temper
 
     // create an instance of llama_context
     llama_context_params ctxParams = llama_context_default_params();
-    ctxParams.n_ctx                = 0;    // take context size from the model GGUF file
+    ctxParams.n_ctx                = 2048;    // take context size from the model GGUF file
     ctxParams.no_perf              = true; // disable performance metrics
     _ctx                           = llama_init_from_model(_model, ctxParams);
 
