@@ -8,8 +8,9 @@ add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/llama.cpp")
 
 add_executable(
         chat
-        src/llm/LLMInference.cpp
-        src/llm/main.cpp
+        # src/llm/LLMInference.cpp
+        # src/llm/main.cpp
+        src/simple-chat.cpp
 )
 target_link_libraries(
         chat
