@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main(int argc, char* argv[]) {
-    std::string modelPath = "../models/DeepSeek-R1-Distill-Qwen-1.5B-Q8_0.gguf";
+    std::string modelPath = "../../gguf-models/Llama-3.2-3B-Instruct.IQ2_XS.gguf";
     float temperature = 1.0f;
     float minP = 0.05f;
     std::unique_ptr<LLMInference> llmInference = std::make_unique<LLMInference>();
